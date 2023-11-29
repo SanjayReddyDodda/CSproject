@@ -152,11 +152,38 @@ The reason for each line:
 
 - **Encrypting Message (`encryptedData`):** The `encryptAES` function is used to encrypt the plaintext `message` using the dynamic symmetric `key`. This step ensures that the message is confidentially encrypted.
 
-- **Base64 Encoding (`return encryptedData.base64EncodedString())`:** The encrypted binary data is converted to a string representation using Base64 encoding before being returned. The reason for using Base64 encoding is that it transforms binary data into a text format, making it suitable for transmission or storage in contexts where only text data is expected.
+
+
+
+
+
+
+
+
+
+
+
+# - **Base64 Encoding (`return encryptedData.base64EncodedString())`:** The encrypted binary data is converted to a string representation using Base64 encoding before being returned. The reason for using Base64 encoding is that it transforms binary data into a text format, making it suitable for transmission or storage in contexts where only text data is expected.
 
    Base64 encoding uses a set of 64 characters (A-Z, a-z, 0-9, '+', '/') to represent binary data in a way that is safe for text-based systems. It ensures that the resulting string is composed of characters that are widely accepted and won't cause issues in various data storage and transmission scenarios.
 
-In summary, the `encryptMessage` function generates a dynamic key, encrypts the plaintext message, and returns the result as a Base64-encoded string for ease of use in text-based contexts. Base64 encoding is chosen because it provides a safe and efficient way to represent binary data as text.
+In summary, the `encryptMessage` function generates a dynamic key, encrypts the plaintext message, and returns the result as a Base64-encoded string for ease of use in text-based contexts. Base64 encoding is chosen because it provides a safe and efficient way to represent binary data as text. #
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Certainly! Let's break down the `decryptMessage` function line by line:
